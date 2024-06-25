@@ -389,6 +389,10 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
         margin-top: 1rem;
         font-size: 1.5rem;
     }
+    
+    .fa-layer-group,
+    .fa-code{
+    font-size: 10rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -415,6 +419,10 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+
+    .fa-layer-group,
+    .fa-code{
+    font-size: 8rem;
 }
 
 
