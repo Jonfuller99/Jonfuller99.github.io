@@ -116,7 +116,7 @@
         transition: all 0.3s ease-in-out;
         background:#fff ;
     }
-    
+
     .navbar_item{
         width: 100%;
     }
@@ -147,11 +147,11 @@
     }
     #mobile-menu.is-active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
-        
+
     }
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
-        
+
     }
 
 }
@@ -211,7 +211,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 }
 
 @media screen and (max-width: 768px) {
-    
+
     .hero_heading{
         font-size: 60px;
     }
@@ -220,8 +220,8 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
         font-size: 40px;
     }
 
-    
-    
+
+
 }
 
 
@@ -358,7 +358,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
         margin: 0 auto;
         height: 90%;
     }
-    
+
     .main_img-container{
         display: flex;
         justify-content: center;
@@ -389,10 +389,6 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
         margin-top: 1rem;
         font-size: 1.5rem;
     }
-    
-    .fa-layer-group,
-    .fa-code{
-    font-size: 10rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -414,15 +410,11 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
         margin-top: 2rem;
         font-size: 1.5rem;
     }  
-    
+
     .main_btn{
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
-
-    .fa-layer-group,
-    .fa-code{
-    font-size: 8rem;
 }
 
 
@@ -468,7 +460,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
     color: #fff;
     background-image: linear-gradient(to right, #32d132 0%, #37e2a1 100%);
     transition: 0.3s ease-in;
-    
+
 }
 
 .projects_card:nth-child(2){
@@ -491,7 +483,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
     text-align: center;
     margin-top: 24px;
     font-size: 20px;
-    
+
 }
 
 .projects_btn{
@@ -657,5 +649,3 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 
 
 }
-
-
