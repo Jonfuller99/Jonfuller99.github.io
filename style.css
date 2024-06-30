@@ -18,6 +18,7 @@
     z-index: 999;
 }
 
+
 .nav-items{
     display: flex;
     justify-content: space-between;
@@ -219,12 +220,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
     .hero_description{
         font-size: 40px;
     }
-
-
-
 }
-
-
 
 /* About Section */
 
@@ -236,7 +232,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 
 .main_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr .1fr;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -252,15 +248,18 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 
 .main_content h1{
     font-size: 2rem;
-    background-color: fe3b6f;
-    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background: #03001e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .main_content h2{
@@ -272,12 +271,21 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
     -mox-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    margin-bottom: 50px;
+    margin-right: auto;
+    text-align: center;
 }
 
 .main_content p{
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
+    margin-bottom: 50px;
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2;
+    color: #ccc;
+    text-align: center;
+    
 
 }
 
@@ -296,7 +304,9 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
     position: relative;
     transition: all 0.35s;
     outline: none;
+    
 }
+
 
 .main_btn a{
     position: relative;
@@ -327,6 +337,55 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 }
 
 
+.about_btn{
+    font-size: 1.2rem;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin: auto;    
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.about_btn a{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.about_btn:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f80759;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.about_btn:hover{
+    color: #fff;
+}
+
+.about_btn:hover:after{
+    width: 100%;
+}
+
+
 .main_img-container{
     text-align: center;
 
@@ -348,6 +407,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
     font-size: 14rem;
 }
 
+
 @media screen and (max-width: 1100px) {
     .main_container{
         display: grid;
@@ -355,7 +415,7 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin: 0 auto;
+        margin: auto;
         height: 90%;
     }
 
@@ -378,16 +438,25 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 
     .main_content h1{
         font-size: 2.5rem;
-        margin-top: 2rem;
+        margin:2.5rem 1rem 1rem 1rem;
     }
 
     .main_content h2{
         font-size: 3rem;
+        margin:1rem 1rem 1rem 1rem;
     }
 
     .main_content p{
         margin-top: 1rem;
         font-size: 1.5rem;
+        margin:1rem 1rem 1rem 1rem;
+
+    }
+
+    .about_btn{
+        padding: 12px 36px;
+        margin: auto;
+
     }
 }
 
@@ -415,6 +484,12 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+
+    .about_btn{
+        padding: 12px 36px;
+        margin: auto;
+
+    }
 }
 
 
@@ -431,8 +506,10 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
 }
 
 .projects h1{
-    background-color: ff8177;
-    background-image: linear-gradient(to right, #d1325a 0%, #db7759 100%);
+    background: #009FFF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -490,7 +567,26 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
     display: flex;
     justify-content: center;
     margin-top: 16px;
+    color: #FFFFFF;
 }
+
+.projects_btn a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+.projects_btn:hover{
+    text-decoration: underline;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+
+
+
+
 .projects_card button{
     color: #fff;
     padding: 14px 24px;
@@ -646,5 +742,5 @@ background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, F
     }
 
 
-    
+
 }
